@@ -1,0 +1,256 @@
+[
+  {
+    "name": "Multitech Micro Professor MPF-III Keyboard",
+    "author": "Brett Hallen",
+    "notes": "Reproduction keyboard for the Multitech Micro Professor MPF-III computer.\n\nThe vertical RETURN key on the original keyboard appears to be 1.25u (wide) by 2u (tall) ... I think this is impossible to find so I've stuck with just a 2u key cap.\n\nThe SPACE bar is also very wide at 9.75u, as they were back then.  This is also probably impossible to find these days.\n",
+    "switchMount": "cherry",
+    "pcb": true
+  },
+  [
+    {
+      "a": 7
+    },
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    {
+      "x": 1
+    },
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    {
+      "t": "#800000\n#000000",
+      "a": 5,
+      "f2": 1,
+      "d": true
+    },
+    "<i class='fa fa-circle'></i>\nCAPS LOCK",
+    {
+      "t": "#ff0000\n#000000",
+      "d": true
+    },
+    "<i class='fa fa-circle'></i>\nNUM LOCK",
+    {
+      "t": "#000000",
+      "a": 7
+    },
+    "PB0",
+    "PB1",
+    {
+      "f": 2
+    },
+    "BREAK",
+    "RESET"
+  ],
+  [
+    {
+      "y": 0.5,
+      "c": "#BEAB8A",
+      "f": 3
+    },
+    "ESC",
+    {
+      "c": "#cccccc",
+      "a": 5
+    },
+    "!\n\n\n\n\n\n1",
+    "@\n\n\n\n\n\n2",
+    "#\n\n\n\n\n\n3",
+    "$\n\n\n\n\n\n4",
+    "%\n\n\n\n\n\n5",
+    "^\n\n\n\n\n\n6",
+    "&\n\n\n\n\n\n7",
+    "*\n\n\n\n\n\n8",
+    "(\n\n\n\n\n\n9",
+    ")\n\n\n\n\n\n0",
+    "_\n\n\n\n\n\n-",
+    "+\n\n\n\n\n\n=",
+    {
+      "c": "#BEAB8A",
+      "a": 7,
+      "f": 9,
+      "w": 2
+    },
+    "&larr;",
+    {
+      "a": 5,
+      "f": 3,
+      "w": 2
+    },
+    "NUM\n\n\n\n\n\nLOCK",
+    {
+      "a": 7,
+      "w": 2
+    },
+    "HALT"
+  ],
+  [
+    {
+      "w": 1.5
+    },
+    "TAB",
+    {
+      "c": "#cccccc"
+    },
+    "Q",
+    "W",
+    "E",
+    "R",
+    "T",
+    "Y",
+    "U",
+    "I",
+    "O",
+    "P",
+    {
+      "a": 5
+    },
+    "{\n\n\n\n\n\n[",
+    "}\n\n\n\n\n\n]",
+    {
+      "c": "#BEAB8A",
+      "a": 7,
+      "w": 1.5
+    },
+    "DEL",
+    {
+      "c": "#cccccc",
+      "a": 4
+    },
+    "7\n\n\n\n\n\n\n\n\nCLRS",
+    "8\n\n\n\n\n\n\n\n\n&uarr;",
+    "9\n\n\n\n\n\n\n\n\nHOME",
+    "-\n\n\n\n\n\n\n\n\nLIST"
+  ],
+  [
+    {
+      "c": "#BEAB8A",
+      "a": 7,
+      "w": 2
+    },
+    "CTRL",
+    {
+      "c": "#cccccc"
+    },
+    "A",
+    "S",
+    "D",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    {
+      "a": 5
+    },
+    ":\n\n\n\n\n\n;",
+    "\"\n\n\n\n\n\n'",
+    "~\n\n\n\n\n\n`",
+    {
+      "c": "#BEAB8A",
+      "a": 7,
+      "f": 9,
+      "h": 2
+    },
+    "<i class='kb kb-Return-2'></i>",
+    {
+      "c": "#cccccc",
+      "a": 4,
+      "f": 3
+    },
+    "4\n\n\n\n\n\n\n\n\n&larr;",
+    "5",
+    "6\n\n\n\n\n\n\n\n\n&rarr;",
+    "+\n\n\n\n\n\n\n\n\nRUN"
+  ],
+  [
+    {
+      "c": "#BEAB8A",
+      "a": 7,
+      "f": 9,
+      "w": 1.5
+    },
+    "<i class='kb kb-Arrows-Top-4'></i>",
+    {
+      "c": "#cccccc",
+      "a": 5,
+      "f": 3
+    },
+    "|\n\n\n\n\n\n\\",
+    {
+      "a": 7
+    },
+    "Z",
+    "X",
+    "C",
+    "V",
+    "B",
+    "N",
+    "M",
+    {
+      "a": 5
+    },
+    "<\n\n\n\n\n\n,",
+    ">\n\n\n\n\n\n.",
+    "?\n\n\n\n\n\n/",
+    {
+      "c": "#BEAB8A",
+      "a": 7,
+      "f": 9,
+      "w": 1.5
+    },
+    "<i class='kb kb-Arrows-Top-4'></i>",
+    {
+      "x": 1,
+      "c": "#cccccc",
+      "a": 4,
+      "f": 3
+    },
+    "1\n\n\n\n\n\n\n\n\nCLRL",
+    "2\n\n\n\n\n\n\n\n\n&darr;",
+    "3\n\n\n\n\n\n\n\n\nCPES",
+    {
+      "a": 7,
+      "f": 9,
+      "h": 2
+    },
+    "<i class='kb kb-Return-2'></i>"
+  ],
+  [
+    {
+      "c": "#BEAB8A",
+      "f": 3,
+      "w": 2.25
+    },
+    "ALT",
+    {
+      "c": "#cccccc",
+      "w": 9.75
+    },
+    "",
+    {
+      "c": "#BEAB8A",
+      "a": 5,
+      "w": 2
+    },
+    "CAPS\n\n\n\n\n\nLOCK",
+    {
+      "c": "#cccccc",
+      "a": 4,
+      "w": 2
+    },
+    "0\n\n\n\n\n\n\n\n\nINSC",
+    {
+      "w": 2
+    },
+    ".\n\n\n\n\n\n\n\n\nDELC"
+  ]
+]
