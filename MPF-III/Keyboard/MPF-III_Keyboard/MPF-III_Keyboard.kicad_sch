@@ -1323,6 +1323,89 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_Push_45deg"
 			(pin_numbers
 				(hide yes)
@@ -2045,6 +2128,70 @@
 			(project "MPF-III_Keyboard"
 				(path "/efb48e1e-1384-4668-b1dc-d7b6eb4680f8"
 					(reference "SW29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 101.6 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05060ace-c527-4d99-a71a-5c0df4ca1c12")
+		(property "Reference" "H4"
+			(at 104.14 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 104.14 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 101.6 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 101.6 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "MPF-III_Keyboard"
+				(path "/efb48e1e-1384-4668-b1dc-d7b6eb4680f8"
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -2867,33 +3014,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push_45deg")
-		(at 31.75 173.99 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 142.24 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2bee3e22-eb55-4ea4-886b-fa2ea7aec533")
-		(property "Reference" "SW55"
-			(at 31.75 166.37 0)
+		(uuid "27325686-8bfa-4e86-995c-d715d328a35d")
+		(property "Reference" "H6"
+			(at 144.78 36.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "CTRL"
-			(at 31.75 168.91 0)
+		(property "Value" "MountingHole"
+			(at 144.78 39.3699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_2.00u"
-			(at 31.75 173.99 0)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 142.24 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2902,7 +3051,69 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 31.75 173.99 0)
+			(at 142.24 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 142.24 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "MPF-III_Keyboard"
+				(path "/efb48e1e-1384-4668-b1dc-d7b6eb4680f8"
+					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 21.59 232.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2bee3e22-eb55-4ea4-886b-fa2ea7aec533")
+		(property "Reference" "SW55"
+			(at 21.59 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CTRL"
+			(at 21.59 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_2.00u"
+			(at 21.59 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 21.59 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2911,7 +3122,7 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 31.75 173.99 0)
+			(at 21.59 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3956,7 +4167,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push_45deg")
-		(at 48.26 205.74 0)
+		(at 64.77 232.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3965,7 +4176,7 @@
 		(fields_autoplaced yes)
 		(uuid "43736fb5-33eb-401c-8fb9-98489c73967d")
 		(property "Reference" "SW86"
-			(at 48.26 198.12 0)
+			(at 64.77 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3973,7 +4184,7 @@
 			)
 		)
 		(property "Value" "ALT"
-			(at 48.26 200.66 0)
+			(at 64.77 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3981,7 +4192,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_2.25u"
-			(at 48.26 205.74 0)
+			(at 64.77 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3990,7 +4201,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 48.26 205.74 0)
+			(at 64.77 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3999,7 +4210,7 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 48.26 205.74 0)
+			(at 64.77 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5714,10 +5925,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "efb26d2e-19d7-40f6-9cfa-015318d6db12")
+			(uuid "efb26d2e-19d7-40f6-9cfa-015318d6db13")
 		)
 		(pin "2"
-			(uuid "eeeae32d-3ae1-4eb2-8444-bc4c84229dbe")
+			(uuid "eeeae32d-3ae1-4eb2-8444-bc4c84229dbf")
 		)
 		(instances
 			(project ""
@@ -5995,10 +6206,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "2b639228-d1a0-4ae6-8cc6-c5e6ad66c6e0")
+			(uuid "2b639228-d1a0-4ae6-8cc6-c5e6ad66c6e1")
 		)
 		(pin "2"
-			(uuid "6b77e9b5-291d-4d14-b966-de4ba2eff6a1")
+			(uuid "6b77e9b5-291d-4d14-b966-de4ba2eff6a2")
 		)
 		(instances
 			(project ""
@@ -6267,10 +6478,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "2b35b048-9228-4860-ad5f-08cc4d94876e")
+			(uuid "2b35b048-9228-4860-ad5f-08cc4d94876f")
 		)
 		(pin "2"
-			(uuid "9cd2b0e0-cad1-4aba-b51a-5f05e5f3c719")
+			(uuid "9cd2b0e0-cad1-4aba-b51a-5f05e5f3c71a")
 		)
 		(instances
 			(project ""
@@ -6412,6 +6623,70 @@
 			(project "MPF-III_Keyboard"
 				(path "/efb48e1e-1384-4668-b1dc-d7b6eb4680f8"
 					(reference "SW59")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 121.92 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "920109b7-442b-439c-98a5-b23cb05a7e01")
+		(property "Reference" "H2"
+			(at 124.46 29.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 124.46 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 121.92 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 121.92 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/efb48e1e-1384-4668-b1dc-d7b6eb4680f8"
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -7302,6 +7577,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 101.6 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c4b32a3c-bc1d-418b-b67f-690cbe848bac")
+		(property "Reference" "H1"
+			(at 104.14 29.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 104.14 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 101.6 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 101.6 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/efb48e1e-1384-4668-b1dc-d7b6eb4680f8"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push_45deg")
 		(at 336.55 205.74 0)
 		(unit 1)
@@ -7847,7 +8186,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push_45deg")
-		(at 29.21 190.5 0)
+		(at 35.56 232.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7856,7 +8195,7 @@
 		(fields_autoplaced yes)
 		(uuid "e2969b61-b55c-415a-9447-fde30b31326a")
 		(property "Reference" "SW73"
-			(at 29.21 182.88 0)
+			(at 35.56 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7864,7 +8203,7 @@
 			)
 		)
 		(property "Value" "LH SHIFT"
-			(at 29.21 185.42 0)
+			(at 35.56 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7872,7 +8211,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.50u"
-			(at 29.21 190.5 0)
+			(at 35.56 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7881,7 +8220,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 29.21 190.5 0)
+			(at 35.56 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7890,7 +8229,7 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 29.21 190.5 0)
+			(at 35.56 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7908,6 +8247,134 @@
 			(project "MPF-III_Keyboard"
 				(path "/efb48e1e-1384-4668-b1dc-d7b6eb4680f8"
 					(reference "SW73")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 121.92 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e3fa9062-acfc-48cf-933c-17446d47224c")
+		(property "Reference" "H5"
+			(at 124.46 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 124.46 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 121.92 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 121.92 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "MPF-III_Keyboard"
+				(path "/efb48e1e-1384-4668-b1dc-d7b6eb4680f8"
+					(reference "H5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 142.24 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e4fc16ee-5627-460b-9149-3a81a9c409ea")
+		(property "Reference" "H3"
+			(at 144.78 29.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 144.78 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 142.24 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 142.24 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/efb48e1e-1384-4668-b1dc-d7b6eb4680f8"
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -7983,7 +8450,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push_45deg")
-		(at 254 190.5 0)
+		(at 50.8 232.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7992,7 +8459,7 @@
 		(fields_autoplaced yes)
 		(uuid "ee84f75a-544e-478e-a332-3dd357b3ce7d")
 		(property "Reference" "SW85"
-			(at 254 182.88 0)
+			(at 50.8 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8000,7 +8467,7 @@
 			)
 		)
 		(property "Value" "RH SHIFT"
-			(at 254 185.42 0)
+			(at 50.8 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8008,7 +8475,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.50u"
-			(at 254 190.5 0)
+			(at 50.8 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8017,7 +8484,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 254 190.5 0)
+			(at 50.8 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8026,7 +8493,7 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 254 190.5 0)
+			(at 50.8 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
