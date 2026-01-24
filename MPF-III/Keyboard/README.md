@@ -33,7 +33,7 @@ This key is used for self-test of the system:
 - The MPF-III will then start the self-test (same as when computer boots with no keyboard connected)
 
 ### RESET
-To invoke a warm restart press CTRL + RESET.
+This is idle high.  To invoke a warm restart press CTRL + RESET.
 
 ### CLOCK
 This signal is idle low.  The MPF takes this signal high when they keyboard takes AKD high.  It remains high as long as AKD is high.
