@@ -28,4 +28,12 @@ The #2 set look to be a slightly modified version of the Apple IIe ROMs:
 - The E000-FFFF ROMs are identical with the Apple IIe ... although my original had two wrong bytes resulting in "ROM:E10" error
 - I have now replaced the corrupted EF#2 with the original Apple IIe and recreated the EF combo (Multitech plus Apple IIe)
 
+## Python scripts
+I created two Python 3 scripts to help with the ROM analysis.<br>
+
+One script extracts possible text strings from the ROM and outputs as ASCII - this is how I discovered that the #2 ROMs were copies of the original Apple ROMs ... the EF #2 had "(c) Apple" text.
+
+The second was to help solve the "ROM:E10" error by calculating the ROM checksum in the [same manner as the Apple does](https://github.com/GLGPrograms/appleIIe-self-test) - the checksum is actually hardcoded in the EF ROM itself at location 0x17FF/0x7FFF.
+
+
  
