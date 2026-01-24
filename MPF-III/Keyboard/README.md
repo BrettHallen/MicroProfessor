@@ -20,7 +20,7 @@ We know it uses a serial protocol via the DE9 connector on the computer.  The pi
 | Pin 8   | RESET  | To MPF    |
 | Pin 9   | AKD    | To MPF    |
 
-## PB0
+### PB0
 To invoke a cold reset:
 - Press CTRL + RESET then PB0
 - Release CTRL + RESET then PB0
