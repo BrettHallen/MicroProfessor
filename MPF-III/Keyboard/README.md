@@ -41,3 +41,8 @@ This signal is idle low.  The MPF takes this signal high when they keyboard take
 ### AKD (Any Key Down)
 This signal is idle low.  The keyboard takes it high when a key is pressed.  In response the MPF will take the CLOCK high for the duration that AKD is high.<br>
 
+### DATA
+I'm guessing that the keyboard will send the scan code serially via the DATA signal and toggle the STROBE for each bit.  Under investigation.
+
+### STROBE
+I think ... maybe ... the keyboard will toggle STROBE for each scan code bit it sends serially via the DATA signal ... ?
