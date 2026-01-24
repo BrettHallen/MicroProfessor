@@ -23,7 +23,7 @@ The top ROMs are #1 and the bottom ROMs are #2 -  either both #1 ROMs are active
 
 ![Piggyback ROMs](/MPF-III/ROMs/MPF-III_ROMs_piggybacked.jpg)
 
-I think the #1 set are Multitech's Apple 2 clone firmware
+I think the #1 set are Multitech's Apple 2 clone firmware.<br>
 
 The #2 set look to be a slightly modified version of the Apple IIe ROMs:
 - Bytes 0x000 to 0x00FF are empty in the original Apple IIe C000-DFFF but has some data in the Multitech version
