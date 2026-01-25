@@ -44,10 +44,12 @@ B9 08 FB ... lda $FB08,y
 ```
 From the [disassembly](https://6502disassembly.com/a2-rom/Unenh_IIe_F8ROM.html):
 ```
-fb65: b9 08 fb     STITLE          lda     TITLE-1,y         ;get a char
-
 fb02: 20 ff 00 ff+ DSKID           .bulk   $20,$ff,$00,$ff,$03,$ff,$3c
 fb09: c1 f0 f0 ec+ TITLE           .str    “Apple ][”
+...
+fb65: b9 08 fb     STITLE          lda     TITLE-1,y         ;get a char
+...
+ffcb: 60                           rts                       ;and 'RTS' to the subroutine!
 ```
 The code wasn't executing as the boot-up was failing during the EF self-test.  This self-test generates an 8-bit sum of all the bytes, bar the actual checksum byte, of the ROM (see Python scripts below).<br>
 
