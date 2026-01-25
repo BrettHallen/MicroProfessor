@@ -24,7 +24,9 @@ Copies of the MPF-III documentation (available on Archive) just in case they get
 Images of my MPF-III/311 machine's inards.
 
 ## Keyboard
-My in-progress attempt to develop a home brew replacement for the original Multitech keyboard.
+My in-progress attempt to develop a home brew replacement for the original Multitech keyboard.<br>
+
+The keyboard looks to be similar to the Multitech AccuFeel so this is perhaps a possible replacment, if one of those could be found of course.
 
 ## ROMs
 Dumps of the ROMs from my machine, plus also some analysis of the keyboard microcontroller code and maybe other parts that differ from a standard Apple IIe.
