@@ -1,5 +1,5 @@
 # Multitech Micro Professor MPF-III
-The MPF-III was Multitech's (later Acer) second Apple 2 clone, coming after the MPF-II.<br>
+The MPF-III was Multitech's (later Acer) Apple IIe clone, coming after the MPF-II Apple ][ clone.<br>
 
 My example is a PAL model MPF-III/311.  The NTSC model is the MPF-III/310.<br>
 
