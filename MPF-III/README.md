@@ -29,5 +29,9 @@ My in-progress attempt to develop a home brew replacement for the original Multi
 The keyboard looks to be similar to the Multitech AccuFeel so this is perhaps a possible replacment, if one of those could be found of course.
 
 ## [ROMs](/MPF-III/ROMs)
-Dumps of the ROMs from my machine, plus also some analysis of the keyboard microcontroller code and maybe other parts that differ from a standard Apple IIe.
+Dumps of the ROMs from my machine, plus also some analysis of the keyboard microcontroller code and maybe other parts that differ from a standard Apple IIe.<br>
 
+A big thanks to [RetroAND and Retrolab](https://bitspassats.com/index.php/Main_Page) for getting the keyboard controller ROM dumped!
+
+## [PALs](/MPF-III/PALs)
+Dumps of the PALs courtesy of [RetroAND and Retrolab](https://bitspassats.com/index.php/Main_Page).
