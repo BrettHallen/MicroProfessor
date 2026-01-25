@@ -3,23 +3,25 @@ These are dumps of the ROMs for the MPF-III.  My machine is the PAL version call
 
 CRC32 checksums are appended to the filenames.<br>
 
-A big thanks to RetroAND (and his dad) for obtaining the keyboard ROM dump.<br>
+A big thanks to [RetroAND and Retrolab](https://bitspassats.com/index.php/Main_Page) for obtaining the keyboard & MOS 1.1 ROM dumps.<br>
 
-| ROM # | Use      | Size  | CRC32    | Notes              |
-|-------|----------|-------|----------|--------------------|
-| U5    | Keyboard | 2732  | 46D4227A | INS8035 MCU        |
-| U20   | Video    | 2732  | 2597BC19 |                    |
-| U24   | AB       | 2764  | 4C3ECB15 | A000-BFFF          |  
-| U25   | CD #1    | 2764  | FCCC5C7D | C000-DFFF          |
-| U25   | CD #2    | 2764  | 6A54E1AA | Modified Apple IIe |
-| U25   | CD combo | 27128 | CF146C2F | Combined #1 & #2   |
-| U26   | EF #1    | 2764  | 56AFE670 | E000-FFFF          |
-| U26   | EF #2    | 2764  | FC3D59D8 | Original Apple IIe |
-| U26   | EF combo | 27128 | 04EE155B | Combined #1 & #2   |
+| ROM # | Use         | Size  | CRC32    | Notes                 |
+|-------|-------------|-------|----------|-----------------------|
+| U5    | Keyboard    | 2732  | 46D4227A | INS8035 MCU           |
+| U20   | Video       | 2732  | 2597BC19 |                       |
+| U24   | AB          | 2764  | 4C3ECB15 | A000-BFFF             |  
+| U25   | CD (MOS1.1) | 2764  | 3D507B48 | C000-DFFF             |
+| U25   | CD (MOS1.3) | 2764  | FCCC5C7D | C000-DFFF             |
+| U25   | CD (IIe)    | 2764  | 6A54E1AA | Modified Apple IIe    |
+| U25   | CD combo    | 27128 | CF146C2F | Combined MOS1.3 & IIe |
+| U26   | EF (MOS1.1) | 2764  | 71B9783D | E000-FFFF             |
+| U26   | EF (MOS1.3) | 2764  | 56AFE670 | E000-FFFF             |
+| U26   | EF (IIe)    | 2764  | FC3D59D8 | Original Apple IIe    |
+| U26   | EF combo    | 27128 | 04EE155B | Combined MOS1.3 & IIe |
 
 Note that my machine came with two sets of U25 & U26 ROMs - piggybacked with their enable pins switched.<br>
 
-The top ROMs are #1 and the bottom ROMs are #2 -  either both #1 ROMs are active or both #2 ROMs are active (enable pulled low).<br>
+The top ROMs are #1 (Multitech MOS) and the bottom ROMs are #2 (Apple IIe) -  either both #1 ROMs are active or both #2 ROMs are active (enable pulled low).<br>
 
 ![Piggyback ROMs](/MPF-III/ROMs/MPF-III_ROMs_piggybacked.jpg)
 
