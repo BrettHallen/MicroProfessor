@@ -49,7 +49,7 @@ fb65: b9 08 fb     STITLE          lda     TITLE-1,y         ;get a char
 fb02: 20 ff 00 ff+ DSKID           .bulk   $20,$ff,$00,$ff,$03,$ff,$3c
 fb09: c1 f0 f0 ec+ TITLE           .str    “Apple ][”
 ```
-The code wasn't executing as the boot-up was failing during the EF self-test.  This self-test generates an 8-bit sum of all the bytes, bar the actual checksum, of the ROM (see Python scripts below).<br>
+The code wasn't executing as the boot-up was failing during the EF self-test.  This self-test generates an 8-bit sum of all the bytes, bar the actual checksum byte, of the ROM (see Python scripts below).<br>
 
 This self-test was failing for the ROM due to these two bytes difference, hence the "ROM:E10" error.<br>
 
