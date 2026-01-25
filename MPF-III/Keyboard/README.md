@@ -46,3 +46,38 @@ I'm guessing that the keyboard will send the scan code serially via the DATA sig
 
 ### STROBE
 I think ... maybe ... the keyboard will toggle STROBE for each scan code bit it sends serially via the DATA signal ... ?
+
+## Keyboard microcontroller
+Annotated disassembly of the MCS-48 code used by the controller is [here](https://github.com/BrettHallen/MicroProfessor/blob/main/MPF-III/ROMs/Analysis/MPF-III_KEYBOARD_disassembly.TXT) (thanks to RetroAND & his dad for making the ROM dump available!).<br>
+
+## Keyboard matrix
+Based on the controller disassembly, here is a possible keyboard matrix.  To be confirmed (because I don't have an actual keyboard!).
+
+```
+     Col7   Col6   Col5   Col4   Col3   Col2   Col1   Col0
+    (bit7) (bit6) (bit5) (bit4) (bit3) (bit2) (bit1) (bit0)
+   ┌───────────────────────────────────────────────────────┐
+ R0│ F1     F2     F3     F4     F5     F6     F7     F8   │
+   ├───────────────────────────────────────────────────────┤
+ R1│ F9     F10    F11    F12    PB1    PB0    HALT   BREAK│
+   ├───────────────────────────────────────────────────────┤
+ R2│ ` ~    1 !    2 @    3 #    4 $    5 %    6 ^    7 &  │
+   ├───────────────────────────────────────────────────────┤
+ R3│ 8 *    9 (    0 )    - _    = +    \ |    DEL    INSC │
+   ├───────────────────────────────────────────────────────┤
+ R4│ Tab    Q      W      E      R      T      Y      U    │
+   ├───────────────────────────────────────────────────────┤
+ R5│ I      O      P      [ {    ] }           CPES   ←    │
+   ├───────────────────────────────────────────────────────┤
+ R6│ Caps   A      S      D      F      G      H      J    │
+   ├───────────────────────────────────────────────────────┤
+ R7│ K      L      ; :    ' "    Return CLRS   HOME   ↑    │
+   ├───────────────────────────────────────────────────────┤
+ R8│ Shift  Z      X      C      V      B      N      M    │
+   ├───────────────────────────────────────────────────────┤
+ R9│ , <    . >    / ?    Space  Ctrl   Alt    →      ↓    │
+   ├───────────────────────────────────────────────────────┤
+R10│NumLk  7 Home 8 ↑    9 PgUp  /      4 ←    5      6 →  │
+   │ *     1 End  2 ↓    3 PgDn  -      0 Ins  . Del  + =  │
+   └───────────────────────────────────────────────────────┘
+```
