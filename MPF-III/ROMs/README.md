@@ -27,8 +27,28 @@ I think the #1 set are Multitech's Apple 2 clone firmware.<br>
 
 The #2 set look to be a slightly modified version of the Apple IIe ROMs:
 - Bytes 0x000 to 0x00FF are empty in the original Apple IIe C000-DFFF but has some data in the Multitech version
-- The E000-FFFF ROMs were almost identical with the Apple IIe ... my original had two wrong bytes resulting in "ROM:E10" error
+- The E000-FFFF ROMs were almost identical with the Apple IIe ... my original had two wrong bytes resulting in "ROM:E10" error (see below)
 - I have now replaced the corrupted EF#2 with the original Apple IIe and recreated the EF combo (Multitech plus Apple IIe)
+
+## "ROM:E10" error
+My machine's EF #2 ROM had only two bytes difference with the IIe ROM at offset 0x1FB6 (0xFFB6 in memory): 
+```
+B9 CB FF ... lda $FFCB,y
+```
+They should've been:
+```
+B9 08 FB ... lda $FB08,y
+```
+From the [disassembly](https://6502disassembly.com/a2-rom/Unenh_IIe_F8ROM.html):
+```
+fb65: b9 08 fb     STITLE          lda     TITLE-1,y         ;get a char
+
+fb02: 20 ff 00 ff+ DSKID           .bulk   $20,$ff,$00,$ff,$03,$ff,$3c
+fb09: c1 f0 f0 ec+ TITLE           .str    “Apple ][”
+```
+The code wasn't executing as the boot-up was failing during the EF self-test.  This self-test generates an 8-bit sum of all the bytes, bar the actual checksum, of the ROM (see Python scripts below).<br>
+
+This self-test was failing for the ROM due to these two bytes difference, hence the "ROM:E10" error.<br>
 
 ## Python scripts
 I created two Python 3 scripts to help with the ROM analysis.<br>
