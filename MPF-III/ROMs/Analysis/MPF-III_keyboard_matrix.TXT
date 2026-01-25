@@ -2,7 +2,7 @@ MPF-III Suggested Keyboard Matrix (11 rows × 8 columns)
 Scan order: Row 0 first → Row 10 last
 R6 starts at 0x57 (row 0 col 7) → decreases left-to-right, top-to-bottom
 
-    Col7   Col6   Col5   Col4   Col3   Col2   Col1   Col0
+     Col7   Col6   Col5   Col4   Col3   Col2   Col1   Col0
     (bit7) (bit6) (bit5) (bit4) (bit3) (bit2) (bit1) (bit0)
    ┌───────────────────────────────────────────────────────┐
  R0│ F1     F2     F3     F4     F5     F6     F7     F8   │ ← P2 (row select via shift)
