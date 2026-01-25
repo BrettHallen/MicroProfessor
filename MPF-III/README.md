@@ -1,5 +1,5 @@
 # Multitech Micro Professor MPF-III
-The MPF-III was Multitech's (later Acer) second Apple 2 clone, coming after the MPF-II.<br>
+The MPF-III was Multitech's (later Acer) Apple IIe clone, coming after the MPF-II Apple ][ clone.<br>
 
 My example is a PAL model MPF-III/311.  The NTSC model is the MPF-III/310.<br>
 
@@ -14,18 +14,20 @@ I do also have a dump of the MCS-48 firmware in the keyboard.<br>
 
 My example actually has dual ROMs that can be switched: it has Multitech's original Apple 2 clone firmware plus an almost exact copy of the Apple IIe firmware.<br>
 
-## Documentation
+## [Documentation](/MPF-III/Documentation)
 Copies of the MPF-III documentation (available on Archive) just in case they get disappeared from there:
 - BASIC Programming Manual
 - Operating Manual
 - Reference Manual
 
-## Images
+## [Images](/MPF-III/Images)
 Images of my MPF-III/311 machine's inards.
 
-## Keyboard
-My in-progress attempt to develop a home brew replacement for the original Multitech keyboard.
+## [Keyboard](/MPF-III/Keyboard)
+My in-progress attempt to develop a home brew replacement for the original Multitech keyboard.<br>
 
-## ROMs
+The keyboard looks to be similar to the Multitech AccuFeel so this is perhaps a possible replacment, if one of those could be found of course.
+
+## [ROMs](/MPF-III/ROMs)
 Dumps of the ROMs from my machine, plus also some analysis of the keyboard microcontroller code and maybe other parts that differ from a standard Apple IIe.
 
