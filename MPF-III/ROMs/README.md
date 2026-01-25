@@ -1,5 +1,5 @@
 # ROM Dumps
-These are dumps of the ROMs for the MPF-III.<br>
+These are dumps of the ROMs for the MPF-III.  My machine is the PAL version called the MPF-III/311.<br>
 
 CRC32 checksums are appended to the filenames.<br>
 
@@ -35,7 +35,19 @@ I created two Python 3 scripts to help with the ROM analysis.<br>
 
 One script extracts possible text strings from the ROM and outputs as ASCII - this is how I discovered that the #2 ROMs were copies of the original Apple ROMs ... the EF #2 had "(c) Apple" text.
 
-The second was to help solve the "ROM:E10" error by calculating the ROM checksum in the [same manner as the Apple does](https://github.com/GLGPrograms/appleIIe-self-test) - the checksum is actually hardcoded in the EF ROM itself at location 0x17FF/0x7FFF.
+The second was to help solve the "ROM:E10" error by calculating the ROM checksum in the [same manner as the Apple does](https://github.com/GLGPrograms/appleIIe-self-test) - the checksum is actually hardcoded in the EF ROM itself at location 0x17FF/0x7FFF:
+
+```
+% python3 checksum.py MPF-III_ROM_EF_2_2764_110B1018.BIN 
+File:          MPF-III_ROM_EF_2_2764_110B1018.BIN
+Size:          8192 bytes (8.0 KB)
+Computed 8-bit checksum (sum mod 256, excluding offset 0x17FF): $3F
+Expected checksum (byte at offset 0x17FF / $F7FF):             $78
+
+→ MISMATCH: This would fail self-test (bad/corrupted ROM or wrong file).
+   Difference: $39
+   To fix for burning: Set byte at 0x17FF to the computed value above.
+```
 
 
  
