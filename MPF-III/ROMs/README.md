@@ -9,7 +9,8 @@ A big thanks to [RetroAND and Retrolab](https://bitspassats.com/index.php/Main_P
 |-------|-------------|-------|----------|-----------------------|
 | U5    | Keyboard    | 2732  | 46D4227A | INS8035 MCU           |
 | U20   | Video       | 2732  | 2597BC19 |                       |
-| U24   | AB          | 2764  | 4C3ECB15 | A000-BFFF             |  
+| U24   | AB (MOS1.1) | 2764  | 304B62E0 | A000-BFFF             |  
+| U24   | AB (MOS1.3) | 2764  | 4C3ECB15 | A000-BFFF             |  
 | U25   | CD (MOS1.1) | 2764  | 3D507B48 | C000-DFFF             |
 | U25   | CD (MOS1.3) | 2764  | FCCC5C7D | C000-DFFF             |
 | U25   | CD (IIe)    | 2764  | 6A54E1AA | Modified Apple IIe    |
