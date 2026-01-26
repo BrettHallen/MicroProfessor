@@ -9,6 +9,8 @@ For a good dump, computed == expected.
 
 Usage:
     python3 checksum.py yourfile.bin
+
+Brett Hallen, 26/Jan/2026
 """
 
 import sys
@@ -19,11 +21,11 @@ def calculate_8bit_checksum(filepath: str, checksum_offset: int = 0x17FF) -> tup
         with open(filepath, "rb") as f:
             data = f.read()
     except Exception as e:
-        print(f"Error reading file {filepath}: {e}", file=sys.stderr)
+        print(f"!! Error reading file {filepath}: {e}", file=sys.stderr)
         sys.exit(1)
 
     if len(data) != 8192:
-        print("Warning: File is not 8 KB (8192 bytes) — may not be an E10/EF ROM dump.")
+        print("!! Warning: File is not 8 KB (8192 bytes) — may not be an E10/EF ROM dump.")
 
     expected = data[checksum_offset] if len(data) > checksum_offset else 0  # Stored checksum byte
 
@@ -36,6 +38,11 @@ def calculate_8bit_checksum(filepath: str, checksum_offset: int = 0x17FF) -> tup
     return total, expected
 
 def main():
+    print("\n########################")
+    print("# Apple 2 ROM Checksum #")
+    print("#          26/Jan/2026 #")
+    print("########################\n")
+
     if len(sys.argv) < 2:
         print("Usage: python3 checksum.py <filename.bin>")
         sys.exit(1)
@@ -43,26 +50,27 @@ def main():
     filepath = sys.argv[1]
 
     if not os.path.isfile(filepath):
-        print(f"Error: '{filepath}' is not a file or does not exist.")
+        print(f"!! Error: '{filepath}' is not a file or does not exist.")
         sys.exit(1)
 
     size = os.path.getsize(filepath)
-    print(f"File:          {filepath}")
-    print(f"Size:          {size} bytes ({size / 1024:.1f} KB)")
+    print(f">> File: {filepath}")
+    print(f">> Size: {size} bytes ({size / 1024:.1f}KB)\n")
 
     computed, expected = calculate_8bit_checksum(filepath)
 
-    print(f"Computed 8-bit checksum (sum mod 256, excluding offset 0x17FF): ${computed:02X}")
-    print(f"Expected checksum (byte at offset 0x17FF / $F7FF):             ${expected:02X}")
+    print(f">> Computed 8-bit checksum (sum mod 256, excluding offset 0x17FF): ${computed:02X}")
+    print(f">> Expected checksum (byte at offset 0x17FF/$F7FF):                ${expected:02X}")
     print()
 
     if computed == expected:
-        print("→ MATCH: This dump should pass the self-test (good ROM).")
+        print("   MATCH: This dump should pass the self-test (good ROM).")
     else:
-        print("→ MISMATCH: This would fail self-test (bad/corrupted ROM or wrong file).")
+        print("!! MISMATCH: This would fail self-test (bad/corrupted ROM or wrong file).")
         print(f"   Difference: ${(expected - computed) & 0xFF:02X}")
         print("   To fix for burning: Set byte at 0x17FF to the computed value above.")
 
+    print()
 
 if __name__ == "__main__":
     main()
