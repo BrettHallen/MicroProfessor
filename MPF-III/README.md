@@ -1,5 +1,5 @@
 # Multitech Micro Professor MPF-III
-The MPF-III was Multitech's (later Acer) Apple IIe clone, coming after the MPF-II Apple ][ clone.<br>
+The MPF-III was Multitech's (later Acer) Apple //e clone, coming after the MPF-II Apple ][ clone.<br>
 
 My example is a PAL model MPF-III/311.  The NTSC model is the MPF-III/310.<br>
 
@@ -12,7 +12,7 @@ I do know the DE9 interface pin out and am currently trying to reverse engineer 
 
 I do also have a dump of the MCS-48 firmware in the keyboard.<br>
 
-My example actually has dual ROMs that can be switched: it has Multitech's original Apple 2 clone firmware plus an almost exact copy of the Apple IIe firmware.<br>
+My example actually has dual ROMs that can be switched: it has Multitech's original Apple clone firmware plus an almost exact copy of the Apple //e firmware.<br>
 
 ## [Documentation](/MPF-III/Documentation)
 Copies of the MPF-III documentation (available on Archive) just in case they get disappeared from there:
