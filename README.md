@@ -8,3 +8,5 @@ The Multitech (Acer) Micro Professor MPF range of computers:
 - MPF-I/88: 8088 trainer with 2x20 LCD
 - MPF-II: 6502 Apple ][ clone with built-in keyboard
 - [MPF-III: 6502 Apple IIe clone with separate keyboard](/MPF-III)
+- [MPF-PC/500: IBM PC/XT clone on an ISA card](/MPF-PC500)
+
