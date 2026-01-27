@@ -17,8 +17,8 @@ My example actually has dual ROMs that can be switched: it has Multitech's origi
 ## [Documentation](/MPF-III/Documentation)
 Copies of the MPF-III documentation (available on Archive) just in case they get disappeared from there:
 - BASIC Programming Manual
-- Operating Manual
-- Reference Manual
+- Operating Manual (working on trying to reduce my 190MB PDF copy)
+- Reference Manual (working on trying to reduce my 190MB PDF copy)
 
 ## [Images](/MPF-III/Images)
 Images of my MPF-III/311 machine's inards.
@@ -27,6 +27,13 @@ Images of my MPF-III/311 machine's inards.
 My in-progress attempt to develop a home brew replacement for the original Multitech keyboard.<br>
 
 The keyboard looks to be similar to the Multitech AccuFeel so this is perhaps a possible replacment, if one of those could be found of course.
+
+## [Switchable Firmware](/MPF-III/MPF-III_Switchable_ROM)
+Small PCB to add the ability to switch between Multitech's original firmware (boots to "MPF-III") and the actual Apple //e firmware (boots to "APPLE ][".<br>
+
+Takes two 27128 EPROMs (one for combined CD and one for combined EF) which are switched via the A13 address line.<br>
+
+![Switchable ROM PCB 3D](/MPF-III/MPF-III_Switchable_ROM/MPF-III_Switchable_ROM_3D.png)
 
 ## [ROMs](/MPF-III/ROMs)
 Dumps of the ROMs from my machine (MOS 1.3) and RetroAND's (MOS 1.1), plus also some analysis of the keyboard microcontroller code and maybe other parts that differ from a standard Apple IIe.<br>
