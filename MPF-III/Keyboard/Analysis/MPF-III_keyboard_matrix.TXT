@@ -1,0 +1,61 @@
+MPF-III KEYBOARD MATRIX  --  VERIFIED FROM FIRMWARE (8035 ROM emulation)
+Verified 19/Jun/2026.  Supersedes the earlier 'suggested' matrix, which had
+the per-row key placement wrong (it was an unverified guess).
+============================================================================
+
+HOW THE HARDWARE SCANS  (this is what you wire in KiCad)
+----------------------------------------------------------------------------
+* It is an ACTIVE-LOW scanned matrix: 11 ROW (drive) lines x 8 COLUMN (sense)
+  lines = 88 nodes. Each key switch bridges one ROW line to one COLUMN line.
+* ROW drive lines (MCU drives ONE low at a time, all others high):
+      Row 0..7  -> P2.0, P2.1, P2.2, P2.3, P2.4, P2.5, P2.6, P2.7
+      Row 8..10 -> P1.0, P1.1, P1.2
+  (Scan order/derivation: R2=7Fh rotated left each row; P1 rows after P2.)
+* COLUMN sense lines = the 8 BUS (DB) pins, read by INS A,BUS then complemented:
+      Col 7..0  -> DB7, DB6, DB5, DB4, DB3, DB2, DB1, DB0   (pull-ups required)
+* A pressed key pulls its column LOW while its row is driven LOW.
+* Scan index R6 = 50h - 8*row + col  (Row0/Col7 = 57h ... Row10/Col0 = 00h).
+
+MODIFIERS THAT ARE *NOT* IN THE ROW/COL MATRIX (dedicated MCU input pins):
+----------------------------------------------------------------------------
+* SHIFT -> T1 pin   (firmware: JNT1; pressed = T1 low)
+* ALT   -> INT pin  (firmware: JNI ; pressed = INT low)
+* T0 pin -> used for a 'special remap' (JNT0). Resting state HIGH. Likely a
+  further modifier/mode line; confirm its physical key from the PCB/photos.
+  NOTE: CTRL and CAPS LOCK *are* in the matrix (Row0/Col7 and Row0/Col5);
+  they generate scan events that toggle internal flags (no character code).
+
+VERIFIED KEY MAP  (cell = key at that Row x Col node; lower-case = unshifted)
+============================================================================
+ROW \ COL | C7(DB7)      C6(DB6)      C5(DB5)      C4(DB4)      C3(DB3)      C2(DB2)      C1(DB1)      C0(DB0)     
+-------------------------------------------------------------------------------------------------------------------
+R0  P2.0| | CTRL (modifier) (no code: NumLk/PB?) CAPS LOCK (modifier) (no code: NumLk/PB?) F12          F11          F10          F9          
+R1  P2.1| | F8           F7           F6           F5           F4           F3           F2           F1          
+R2  P2.2| | kp7/CLRS     kp9/HOME     kp-/LIST     kp+/RUN      kp1/CLRL     kp3/CPES     kp0/INSC     kp./DELC    
+R3  P2.3| | kp8(up)      Bksp/kp4(<-) 5/kp5        kp6(->)      kp2(dn)      BREAK        HALT         Return      
+R4  P2.4| | Bksp/kp4(<-) DEL          =            ]            `            -/kp-        [            '           
+R5  P2.5| | /            ;            ./kpDEL      ,            Space        \            TAB          ESC         
+R6  P2.6| | (empty)      q            a            z            w            s            x            e           
+R7  P2.7| | (empty)      d            c            r            f            v            t            g           
+R8  P1.0| | (empty)      b            y            h            n            u            j            m           
+R9  P1.1| | (empty)      i            k            o            l            p            0            9           
+R10 P1.2| | 8            7            6            5/kp5        4            3            2            1           
+
+LEGEND / NOTES
+----------------------------------------------------------------------------
+* 'kpN' = numeric-keypad key (shares its code with the editing/arrow function
+  printed on the keycap, e.g. kp7/CLRS). 'Bksp/kp4(<-)' etc. share codes.
+* (empty)  = node is scanned but unused (table code 10h). 4 of these.
+* (no code: NumLk/PB?) = Row0/Col6 (R6=56h) and Row0/Col4 (R6=54h): the
+  firmware explicitly tests these and does nothing. Most likely NUM LOCK and a
+  push-button (PB0/PB1) / unused. Confirm from the PCB silkscreen or photos.
+* RESET is normally hard-wired to the CPU reset line, NOT part of this matrix.
+* Each node's normal AND shifted output code is listed in matrix_verified.csv.
+
+WHAT THE ROM CANNOT TELL US (worth confirming from your photos / a meter):
+----------------------------------------------------------------------------
+1. DIODES: presence/orientation of per-key anti-ghosting diodes (the scan/
+   debounce code is identical with or without them). Look for diodes on the PCB.
+2. The physical keyboard<->mainboard CONNECTOR pinout (which header pin carries
+   P2.x / P1.x / DBx / T0 / T1 / INT). For a from-scratch build you define this.
+3. Physical placement of the 2 uncoded nodes and the T0 key.
