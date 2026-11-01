@@ -1,13 +1,15 @@
 # MPF-PC/500
 Multitech's IBM PC clone on an ISA card.<br>
 
+![MPF-PC/500 board](/MPF-PC500/Images/Multitech_MPF_PC-500_small.png)
+
 ## Documentation
 Pffft, yeah, I wish ...
 
-## [Images](/Images)
+## [Images](/MPF-PC500/Images)
 Photos of my example.
 
-## [BIOS](/BIOS)
+## [BIOS](/MPF-PC500/BIOS)
 A dump of the v3.3.0 ROM on my board plus a disassembly to aid understanding how this thing might work.
 
 ## Main Components
