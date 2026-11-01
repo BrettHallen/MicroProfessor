@@ -34,12 +34,12 @@ reads as 0. The board has pads for **SW2 but no switch fitted**. That fits the c
 reads memory size from switches and finds it by probing instead.
 
 | Switch | Bit | Meaning | On the board in the photo |
-|---|---|---|---|
-| 1 | 0 | OFF = diskette drive(s) fitted (boot from A:) | OFF: fitted |
-| 2 | 1 | 8087 present (IBM meaning, unused by this BIOS) | ON: none |
-| 3–4 | 2–3 | Number of 64 KB blocks to pre-clear (1–4) | 3 OFF, 4 ON: 128 KB |
-| 5–6 | 4–5 | Display: ON/ON none or EGA, OFF/ON CGA 40×25, ON/OFF CGA 80×25, OFF/OFF MDA | 5 ON, 6 OFF: CGA 80×25 |
-| 7–8 | 6–7 | Number of diskette drives − 1 | 7 OFF, 8 ON: 2 drives |
+|--------|-----|---|---|
+| 1      | 0   | OFF = diskette drive(s) fitted (boot from A:) | OFF: fitted |
+| 2      | 1   | 8087 present (IBM meaning, unused by this BIOS) | ON: none |
+| 3–4    | 2–3 | Number of 64 KB blocks to pre-clear (1–4) | 3 OFF, 4 ON: 128 KB |
+| 5–6    | 4–5 | Display: ON/ON none or EGA, OFF/ON CGA 40×25, ON/OFF CGA 80×25, OFF/OFF MDA | 5 ON, 6 OFF: CGA 80×25 |
+| 7–8    | 6–7 | Number of diskette drives − 1 | 7 OFF, 8 ON: 2 drives |
 
 ![My DIP switch settings](/MPF-PC500/Images/Multitech_MPF_PC-500_DIP_Switches_small.jpg)
 
