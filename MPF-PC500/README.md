@@ -10,6 +10,20 @@ Photos of my example.
 ## [BIOS](/BIOS)
 A dump of the v3.3.0 ROM on my board plus a disassembly to aid understanding how this thing might work.
 
+## Main Components
+- ISA edge connector (only +5V and GND connected)
+- 5-pin DIN for keyboard
+- Intel 8088-2 (8MHz rated)
+- Intel 8259A Programmable Interrupt Controller (PIC)
+- Intel 8255A-5 Programmable Peripheral Interface (PPI)
+- Intel 8237A-5 Direct Memory Access (DMA) Controller
+- Intel 8253-5 Programmable Interval Timer (PIT)
+- 8KB BIOS ROM (v3.3.0 in my case)
+- 14.31818MHz crystal
+- 256KB of RAM, expanded to 512KB total
+- custom 20-pin MT5-P02 ... MCU, PAL, GAL ... ?
+- 8-way DIP switch
+
 ## DIP Switch Settings
 From the BIOS disassembly it's possible to figure out the purpose of each DIP switch.<br>
 
