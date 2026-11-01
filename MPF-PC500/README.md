@@ -25,7 +25,7 @@ reads memory size from switches and finds it by probing instead.
 | 5–6 | 4–5 | Display: ON/ON none or EGA, OFF/ON CGA 40×25, ON/OFF CGA 80×25, OFF/OFF MDA | 5 ON, 6 OFF: CGA 80×25 |
 | 7–8 | 6–7 | Number of diskette drives − 1 | 7 OFF, 8 ON: 2 drives |
 
-![My DIP switch settings](/Images/Multitech_MPF_PC-500_DIP_Switches_small.jpg)
+![My DIP switch settings](/MPF-PC500/Images/Multitech_MPF_PC-500_DIP_Switches_small.jpg)
 
 The setting in the photo (CGA, two drives) matches the Popular 500's stock configuration.
 SW1-3/4 only controls the first clear. Real memory size always comes from the probe, so these two
